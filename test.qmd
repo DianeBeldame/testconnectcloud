@@ -1,0 +1,36 @@
+---
+title: "Titre de votre document"
+author: "Votre nom"
+date: "`r Sys.Date()`"
+format: html
+editor: visual
+---
+
+# Introduction
+
+Cette section sert d'introduction à votre document. Vous pouvez ajouter du texte, des images, des tableaux, et bien plus encore.
+
+## Objectifs
+
+- Objectif 1
+- Objectif 2
+- Objectif 3
+
+# Analyse des données
+
+Vous pouvez inclure des blocs de code pour analyser des données. Voici un exemple de code en R :
+
+```{r}
+# Charger les bibliothèques nécessaires
+library(ggplot2)
+
+# Créer un jeu de données exemple
+data <- data.frame(
+  x = rnorm(100),
+  y = rnorm(100)
+)
+
+# Générer un graphique simple
+ggplot(data, aes(x, y)) +
+  geom_point() +
+  theme_minimal()
